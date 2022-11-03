@@ -13,7 +13,7 @@
           "strict": true
         }
       },
-      "root": "fanny-dairy",
+      "root": "",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
