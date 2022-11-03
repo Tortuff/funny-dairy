@@ -2,11 +2,11 @@
   "name": "funny-dairy",
   "version": "0.0.0",
   "scripts": {
-    "ng": "funny-dairy/node_modules/.bin/ng",
-    "start": "funny-dairy/node_modules/.bin/ng serve",
-    "build": "funny-dairy/node_modules/.bin/ng build",
-    "watch": "funny-dairy/node_modules/.bin/ng build --watch --configuration development",
-    "test": "funny-dairy/node_modules/.bin/ng test"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +34,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "prettier": "2.7.1",
     "typescript": "~4.5.2"
   }
 }

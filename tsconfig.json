@@ -19,24 +19,13 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@private/*": [
-        "src/app/private/*"
-      ],
-      "@public/*": [
-        "src/app/public/*"
-      ],
-      "@shared/*": [
-        "src/app/shared/*"
-      ],
-      "@environments/*": [
-        "src/environments/*"
-      ]
+      "@private/*": ["src/app/private/*"],
+      "@public/*": ["src/app/public/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@environments/*": ["src/environments/*"]
     }
   },
   "angularCompilerOptions": {
