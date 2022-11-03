@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core';
+import { UserModel } from '@shared/types/user-model.types';
+import { HttpService } from '@shared/services/http/http.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
-export class LoginComponent implements OnInit {
-  constructor() {}
+export class LoginComponent {
+  user = new UserModel();
 
-  ngOnInit(): void {}
+  constructor(private readonly httpService: HttpService) {}
 }

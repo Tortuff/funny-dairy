@@ -1,3 +1,8 @@
 export class UserModel {
-  constructor(public name: string, public age: number) {}
+  public name: string;
+  public age: number;
+
+  constructor(data: Partial<UserModel> = {}) {
+    data && Object.assign(this, data);
+  }
 }
