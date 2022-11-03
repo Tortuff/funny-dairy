@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { UserModel } from '@shared/types/user-model.types';
-import { HttpService } from '@shared/services/http/http.service';
 
 @Component({
   selector: 'app-login',
@@ -10,5 +9,9 @@ import { HttpService } from '@shared/services/http/http.service';
 export class LoginComponent {
   user = new UserModel();
 
-  constructor(private readonly httpService: HttpService) {}
+  constructor() {}
+
+  postUser(): void {
+    console.log('[USER] ==> ', this.user);
+  }
 }

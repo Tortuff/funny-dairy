@@ -1,10 +1,13 @@
-<div>
-  <label for="name">Name</label>
-  <input [(ngModel)]="user.name" type="text" id="name" />
+<div class="field">
+  <label class="mr-2" for="name">Name</label>
+  <input [(ngModel)]="user.name" type="text" id="name" pInputText/>
 </div>
-<div>
-  <label for="age">Age</label>
-  <input [(ngModel)]="user.age" type="text" id="age" />
+<div class="field">
+  <label class="mr-2" for="age">Age</label>
+  <input [(ngModel)]="user.age" type="text" id="age" pInputText/>
 </div>
 
 
+<div>
+  <button (click)="postUser()" label="Apply" pButton></button>
+</div>
