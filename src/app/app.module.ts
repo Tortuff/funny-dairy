@@ -8,8 +8,8 @@ import { PrivateModule } from '@private/private.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastModule } from 'primeng/toast';
 import { MessageModule } from 'primeng/message';
-import { MessagesModule } from 'primeng/messages';
 import { MessageService } from 'primeng/api';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,7 +21,7 @@ import { MessageService } from 'primeng/api';
     PrivateModule,
     ToastModule,
     MessageModule,
-    MessagesModule,
+    BrowserAnimationsModule,
   ],
   providers: [MessageService],
   bootstrap: [AppComponent],
