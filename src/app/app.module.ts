@@ -6,11 +6,24 @@ import { AppComponent } from './app.component';
 import { PublicModule } from '@public/public.module';
 import { PrivateModule } from '@private/private.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ToastModule } from 'primeng/toast';
+import { MessageModule } from 'primeng/message';
+import { MessagesModule } from 'primeng/messages';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, PublicModule, PrivateModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    PublicModule,
+    PrivateModule,
+    ToastModule,
+    MessageModule,
+    MessagesModule,
+  ],
+  providers: [MessageService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

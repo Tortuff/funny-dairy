@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MainAppComponent } from '@private/pages/main.app/main.app.component';
+import { Environment } from '@environments/environment';
 import { AppLoginComponent } from '@public/pages/login/app-login.component';
-import { UserConfigurationsComponent } from '@private/pages/user-configurations/user-configurations.component';
 
 const routes: Routes = [
-  { path: 'funny-dairy', component: AppLoginComponent },
-  { path: '', component: UserConfigurationsComponent },
-  // { path: '**', redirectTo: 'funny-dairy' },
+  {
+    path: Environment.baseHref,
+    component: MainAppComponent,
+    children: [{ path: '', component: AppLoginComponent }],
+  },
 ];
 
 @NgModule({
