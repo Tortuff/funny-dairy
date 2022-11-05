@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainAppComponent } from '@private/pages/main.app/main.app.component';
+import { AppMainComponent } from '@private/pages/main.app/app-main.component';
 import { Environment } from '@environments/environment';
 import { AppLoginComponent } from '@public/pages/login/app-login.component';
 
 const routes: Routes = [
   {
     path: Environment.baseHref,
-    component: MainAppComponent,
+    component: AppMainComponent,
     children: [{ path: '', component: AppLoginComponent }],
   },
 ];
