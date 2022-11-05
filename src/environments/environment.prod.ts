@@ -1,4 +1,4 @@
 export const Environment = {
   production: true,
-  baseHref: 'fanny-dairy',
+  baseHref: 'funny-dairy',
 };

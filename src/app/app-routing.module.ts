@@ -10,7 +10,6 @@ const routes: Routes = [
     component: AppMainComponent,
     children: [{ path: '', component: AppLoginComponent }],
   },
-  { path: '', component: AppLoginComponent },
 ];
 
 @NgModule({
