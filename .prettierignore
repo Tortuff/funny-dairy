@@ -1,8 +1,0 @@
-**/.git
-**/node_modules
-**/docs
-**/.vscode
-**/.angular
-
-# Ignore all HTML files:
-*.html
