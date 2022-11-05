@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppLoginComponent } from '@public/pages/login/app-login.component';
 
 const routes: Routes = [
+  { path: 'funny-dairy', component: AppLoginComponent },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', component: AppLoginComponent },
   { path: '**', redirectTo: '/notfound' },
 ];
 
