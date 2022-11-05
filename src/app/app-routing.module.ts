@@ -4,7 +4,7 @@ import { AppLoginComponent } from '@public/pages/login/app-login.component';
 
 const routes: Routes = [
   { path: 'funny-dairy', component: AppLoginComponent },
-  { path: '**', redirectTo: 'funny-dairy' },
+  // { path: '**', redirectTo: 'funny-dairy' },
 ];
 
 @NgModule({
