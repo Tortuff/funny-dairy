@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from '@public/pages/login/login.component';
+import { AppLoginComponent } from '@public/pages/login/app-login.component';
 
 const routes: Routes = [
-  {
-    path: '/fanny-dairy/fanny-dairy',
-    component: LoginComponent,
-  },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: AppLoginComponent },
+  { path: '**', redirectTo: '/notfound' },
 ];
 
 @NgModule({

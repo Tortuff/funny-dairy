@@ -3,10 +3,10 @@ import { UserModel } from '@shared/types/user-model.types';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  templateUrl: './app-login.component.html',
+  styleUrls: ['./app-login.component.scss'],
 })
-export class LoginComponent {
+export class AppLoginComponent {
   user = new UserModel();
 
   constructor() {}
