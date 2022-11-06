@@ -5,6 +5,9 @@
 export const Environment = {
   production: false,
   baseHref: '',
+  serverConfig: {
+    apiBase: 'https://node-4lkjpu--3000.local-credentialless.webcontainer.io/api',
+  },
 };
 
 /*

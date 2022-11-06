@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "replace:build": "node replace-links.js"
+    "replace:build": "node replace-links.js",
+    "dev:chrome": "node run-development-browser.js"
   },
   "private": true,
   "dependencies": {

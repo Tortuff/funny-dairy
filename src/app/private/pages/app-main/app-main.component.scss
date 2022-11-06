@@ -7,15 +7,14 @@
   header {
     background-color: var(--green-50);
     height: 4rem;
+    flex: 0 0 4rem;
   }
 
   footer {
     background-color: var(--green-100);
-    height: 4rem;
+    flex: 0 0 4rem;
   }
   main {
-    flex: 1 1 auto;
-    overflow: auto;
-    height: calc(100% - 8rem);
+    flex: 1 0 auto;
   }
 }
